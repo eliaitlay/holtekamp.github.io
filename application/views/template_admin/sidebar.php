@@ -49,6 +49,12 @@
             <i class="fa fa-pie-chart"></i>
             <span>Setting</span>
           </a>
+
+          <!--<li class="list">
+          <a href="<?php echo base_url('admin/berita'); ?>">
+            <i class="fa fa-pie-chart"></i>
+            <span>Berita</span>
+          </a>-->
           <!-- 
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url('admin/identitas') ?>"><i class="fa fa-circle-o"></i> Identitas Perusahaan</a></li>

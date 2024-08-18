@@ -56,7 +56,7 @@ class Identitas extends CI_Controller {
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                 <h4><i class="icon fa fa-check"></i> Success!</h4>
                 Identitas berhasil diperbaharui!.
-              </div>');
+			</div>');
 		redirect('admin/identitas');
 	}
 
@@ -96,7 +96,7 @@ class Identitas extends CI_Controller {
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                 <h4><i class="icon fa fa-check"></i> Success!</h4>
                 Data berhasil diperbaharui!..
-              </div>');
+			</div>');
 		redirect('admin/identitas');
 	}
 
@@ -133,7 +133,7 @@ class Identitas extends CI_Controller {
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                 <h4><i class="icon fa fa-check"></i> Success!</h4>
                 Data berhasil diperbaharui!..
-              </div>');
+			</div>');
 		redirect('admin/identitas');
 	}
 

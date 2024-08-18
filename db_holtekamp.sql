@@ -21,6 +21,27 @@ SET time_zone = "+00:00";
 -- Database: `db_desa`
 --
 
+--
+-- Struktur dari tabel `informasi`
+--
+
+CREATE TABLE `informasi` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(255) NOT NULL,
+  `content` TEXT NOT NULL,
+  `status` ENUM('Aktif', 'Nonaktif') NOT NULL,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `gambar` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+--
+-- Dumping data untuk tabel `informasi`
+--
+INSERT INTO `informasi` (`title`, `content`, `status`, `gambar`) 
+VALUES ('Judul Informasi', 'Isi informasi di sini', 'Aktif', 'gambar.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -39,7 +60,7 @@ CREATE TABLE `about` (
 --
 
 INSERT INTO `about` (`id`, `about_us`, `visi`, `misi`) VALUES
-(1, 'Kampung holtekamp profil kampung holtekamp.. lorem ipusm dolor Kampung holtekamp profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor Desa nagrak profil desa nagrak.. lorem ipusm dolor', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse');
+(1, 'Kampung holtekamp profil kampung holtekamp.. lorem ipusm dolor Kampung holtekamp profil .. lorem ipusm dolor  profil kampung holtekamp.. lorem ipusm dolor profil kampung holtekamp.. lorem ipusm profil kampung holtekamp.. lorem ipusm profil kampung holtekamp.. lorem ipusm profil kampung dolor', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse');
 
 -- --------------------------------------------------------
 

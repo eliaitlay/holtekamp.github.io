@@ -10,6 +10,7 @@ class User extends CI_Controller {
 		$data['about'] = $this->DataModel->getData('about')->result();
 		$data['kegiatan'] = $this->db->get('kegiatan')->result();
 		$data['fasilitas'] = $this->db->get('fasilitas')->result();
+		$data['informasi'] = $this->db->get('informasi')->result();
 
 		$this->load->view('dashboard', $data);
 	}
